@@ -61,7 +61,7 @@ func drawShape(gtx *layout.Context, s [][3]v2d.Vec, bnd v2d.Rect, col color.RGBA
 		y -= 0.5 * (bnd.Max.Y + bnd.Min.Y)
 		y *= scale
 		y += 0.5 * h
-		return y
+		return h - y
 	}
 
 	// draw each of the triangles
